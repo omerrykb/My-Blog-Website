@@ -20,7 +20,7 @@ function Home() {
         element.style.marginLeft = ""
         element.style.opacity = "1";
       }, 200 * (i + 1));
- 
+
     }
     for (let i = 0; i < 3; i++) {
       const element = aboutText[i];
@@ -32,7 +32,7 @@ function Home() {
         element.style.opacity = "1";
       }, 300 * (i + 1));
     }
-    
+
     LogoDivParents.forEach(element => {
       element.addEventListener('click', () => {
         for (let i = 0; i < 6; i++) {

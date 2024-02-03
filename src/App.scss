@@ -2,8 +2,24 @@
   background: #000000;
 
   .navbar {
-    box-shadow: 1px 0px 12px 1px rgba(0, 255, 166, 0.575);
 
+    box-shadow: 1px 0px 12px 1px rgba(0, 255, 166, 0.575);
+    animation: navbarAnimation 20s linear infinite;
+    background: linear-gradient(145deg,rgb(0, 0, 0), rgb(9, 9, 9), rgb(20, 19, 19));
+    background-size: 120%;
+    border-radius: 2px 2px 3rem 3rem;
+
+    @keyframes navbarAnimation {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
 
     .nav-links {
       transition: all .5s;

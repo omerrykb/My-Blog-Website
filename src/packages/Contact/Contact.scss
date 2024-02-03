@@ -78,6 +78,24 @@
                         padding: .5rem;
                         font-family: 'Protest Guerrilla', sans-serif;
                     }
+
+
+                }
+
+                .DiscordUserNameParent {
+                    .DiscordUserName {
+                        color: white;
+                        transition: all 1s;
+                        opacity: 0;
+                        font-family: 'Protest Guerrilla', sans-serif;
+                    }
+
+                    &:hover {
+                        .DiscordUserName {
+                            opacity: 1;
+                        }
+
+                    }
                 }
             }
         }
