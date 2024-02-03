@@ -42,11 +42,19 @@
         color: rgba(26, 101, 26, 0.944) !important;
       }
     }
+
+
+    .navbar-nav{
+      @media screen and (max-width:580px) {
+        margin-right: 1rem !important;
+      }
+    }
   }
 
   .navbar-brand {
     padding: 0 !important;
     animation: logo 7s linear infinite !important;
+
 
     a {
       padding: 0 !important;
@@ -68,6 +76,11 @@
       90% {
         color: black;
       }
+    }
+
+
+    @media screen and (max-width:580px) {
+      margin-left: 3rem !important;
     }
   }
 
