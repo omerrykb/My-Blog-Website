@@ -40,10 +40,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar bg="dark" data-bs-theme="dark" className='fixed-top  '>
+      <Navbar bg="dark" data-bs-theme="dark" className='fixed-top'>
         <Container>
-          <Navbar.Brand> <Link className='text-decoration-none text-reset' to={"/"}><span>R</span><span>a</span><span>t</span><span>h</span></Link> </Navbar.Brand>
-          <Nav className="ms-auto ">
+          <Navbar.Brand className='me-auto'> <Link className='text-decoration-none text-reset' to={"/"}>Rath</Link> </Navbar.Brand>
+          <Nav className="ms-auto">
             <NavLink to="/" className='text-decoration-none text-secondary-emphasis me-2 fw-semibold p-1 px-3 nav-links' exact activeClassName="active">Home</NavLink>
             <NavLink to="/contact" className='text-decoration-none text-secondary-emphasis ms-2 fw-semibold p-1 px-3 nav-links' exact activeClassName="active">Contact</NavLink>
           </Nav>

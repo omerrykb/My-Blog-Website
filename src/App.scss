@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+
 .App {
   background: #000000;
 
@@ -5,7 +8,7 @@
 
     box-shadow: 1px 0px 12px 1px rgba(0, 255, 166, 0.575);
     animation: navbarAnimation 20s linear infinite;
-    background: linear-gradient(145deg,rgb(0, 0, 0), rgb(9, 9, 9), rgb(20, 19, 19));
+    background: linear-gradient(145deg, rgb(0, 0, 0), rgb(9, 9, 9), rgb(20, 19, 19));
     background-size: 120%;
     border-radius: 2px 2px 3rem 3rem;
 
@@ -37,6 +40,33 @@
 
       &:hover {
         color: rgba(26, 101, 26, 0.944) !important;
+      }
+    }
+  }
+
+  .navbar-brand {
+    padding: 0 !important;
+    animation: logo 7s linear infinite !important;
+
+    a {
+      padding: 0 !important;
+      text-shadow: -3px -2px 0 rgb(72, 72, 72);
+      font-style: italic;
+      letter-spacing: 3px;
+      font-size: 30px;
+      font-family: 'Protest Guerrilla', sans-serif;
+    }
+
+    @keyframes logo {
+
+      0%,
+      100%,
+      80% {
+        color: #17ff00;
+      }
+
+      90% {
+        color: black;
       }
     }
   }
