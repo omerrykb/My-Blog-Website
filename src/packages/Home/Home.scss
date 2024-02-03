@@ -1,0 +1,219 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+
+
+
+
+ .HomeParent {
+     height: 100vh;
+
+     @media screen and (max-width:992px) {
+         height: 225vh;
+     }
+     @media screen and (max-width:440px) {
+         height: 200vh;
+     }
+     @media screen and (max-width:400px) {
+         height: 180vh;
+     }
+     
+     .container-md {
+         @media screen and (max-width:992px) {
+             margin-top: 5rem !important;
+         }
+         height: 100%;
+
+         .about-text{
+            opacity: 0;
+            transition: all 1.5s !important;
+         }
+
+         .content-left-col {
+             margin-top: -4rem !important;
+
+             .Content-left {
+                 width: 100%;
+                 margin-top: 5rem !important;
+                 padding: 1rem;
+
+                 .MyImage {
+                     border-radius: 100%;
+                     margin-top: -5rem !important;
+                     animation: zoomOut 2s ease-in-out forwards;
+                     @keyframes zoomOut {
+                        0%{
+                            opacity: 0;
+                        }
+                        100%{
+                            opacity: 1;
+
+                        }
+                     }
+
+                     @media screen and (max-width:992px) {
+                         margin-top: -2rem !important;
+                     }
+
+                     img {
+
+                         padding: 10rem;
+                         border-radius: 100%;
+                         max-width: 100%;
+                         object-fit: cover;
+                         animation: ImgShadowAnimation 3s linear infinite;
+                         transition: all 1s;
+
+                         &:hover {
+                             animation: ImgShadowAnimation 1s linear infinite;
+                             opacity: .5;
+
+
+                         }
+
+                         @media screen and (max-width:1200px) {
+                             padding: 7rem;
+                         }
+
+                         @media screen and (max-width:992px) {
+                             padding: 4rem;
+
+                         }
+
+                         @keyframes ImgShadowAnimation {
+
+                             0%,
+                             100% {
+                                 box-shadow: -1px -10px 10px 1px rgba(0, 108, 70, 0.575);
+                             }
+
+                             81% {
+                                 box-shadow: -10px -40px 10px 1px rgba(0, 108, 70, 0.575);
+                             }
+
+                             90% {
+                                 box-shadow: -10px 10px 10px 1px rgba(0, 108, 70, 0.575);
+
+                             }
+                         }
+
+
+
+
+
+
+
+                     }
+                 }
+
+                 h1 {
+
+                     padding: 2rem;
+                     margin-top: -9rem !important;
+                     text-shadow: -3px -3px 0 rgb(72, 72, 72);
+                     color: #17ff00;
+                     font-size: 40px;
+                     letter-spacing: 2px;
+                     font-family: 'Ubuntu', sans-serif;
+                     text-align: center;
+
+                     @media screen and (max-width:1200px) {
+                         margin-top: -6rem !important;
+                     }
+
+                     @media screen and (max-width:992px) {
+                         margin-top: -3rem !important;
+                         padding: 1rem;
+                         font-size: 30px;
+                     }
+                 }
+
+                 p {
+                     font-family: 'Ubuntu', sans-serif;
+                     margin-top: -1rem !important;
+                     text-shadow: -2px -2px 3px rgb(72, 72, 72);
+                     color: #15ff00af;
+                     font-size: 14px;
+
+                     @media screen and (max-width:992px) {
+
+                         font-size: 12px;
+                     }
+                 }
+             }
+
+             h1,
+             p {
+                 transition: all 1.5s !important;
+             }
+
+
+
+
+
+         }
+
+
+         .content-right-col {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+
+             .LogoDivParent {
+                opacity: 0;
+                 transition: all 1s !important;
+                 width: 100%;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 gap: 1rem;
+                 padding: 1rem !important;
+
+                 &:hover {
+                     opacity: .5 !important;
+                     margin-left: -2rem !important;
+
+                     h4 {
+                         color: rgba(0, 255, 166, 0.575) !important;
+                     }
+                 }
+                 @media screen and (max-width:415px) {
+                   
+                    h4{
+                        font-size: 15px !important;
+                    }
+                 }
+
+                 .myImageLogo {
+                     width: 10%;
+
+
+
+
+                     img {
+                         object-fit: cover;
+
+
+                     }
+                 }
+
+                 h4 {
+                     transition: all .5s;
+                     opacity: .8;
+                     width: 50%;
+                     text-shadow: -2px -1px 0 rgb(72, 72, 72);
+                     font-family: 'Sixtyfour', sans-serif;
+                     position: relative;
+                     white-space: nowrap;
+                     color: #17ff00;
+
+
+                 }
+
+             }
+
+         }
+     }
+
+ }
